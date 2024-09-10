@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    background-color: white;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+.video-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    filter: brightness(45%);
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.centered-text h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+.players-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.players-table th, .players-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.players-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.players-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.players-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.players-table td {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .centered-text h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    .players-table {
+        font-size: 0.9rem;
+    }
+}
+
+.clubs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.club {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.club h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.club img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.club p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
